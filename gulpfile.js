@@ -127,7 +127,7 @@ const zip = () => {
         .pipe(gulp.dest(buildFolder))
 }
 
-gulp.task('default', gulp.series(clean, html, css, js, img, resources))
-gulp.task('min', gulp.series(clean, htmlMin, cssMin, jsMin, img, resources))
+gulp.task('build', gulp.series(clean, html, css, js, img, resources))
+gulp.task('prod', gulp.series(clean, htmlMin, cssMin, jsMin, img, resources))
 gulp.task('dev', gulp.series(clean, html, css, js, img, resources, watcher))
 gulp.task('zip', zip)

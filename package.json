@@ -5,8 +5,9 @@
     "main": "gulpfile.js",
     "type": "module",
     "scripts": {
-        "gulp": "gulp",
-        "backend": "gulp backend",
+        "build": "gulp build",
+        "prod": "gulp prod",
+        "dev": "gulp dev",
         "zip": "gulp zip"
     },
     "author": "korichh",
